@@ -1,0 +1,43 @@
+/* App container */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  position: relative;
+  background: url('C:\Users\Amit\Desktop\diwali\diwali\public\new.gif') center center repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+  .App {
+    background-position: center;
+    background-size: contain; /* Scale the image to fit on smaller screens */
+    padding: 20px; /* Add some padding for mobile */
+  }
+
+  .floating-message {
+    font-size: 1.5em; /* Adjust font size for readability */
+  }
+}
+
+/* Floating message styling */
+.floating-message {
+  font-size: 2em;
+  color: #f8e71c;
+  text-shadow: 2px 2px 8px #ff5722;
+  animation: float 6s ease-in-out infinite;
+  margin: 0;
+}
+
+/* Animation for the floating effect */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
